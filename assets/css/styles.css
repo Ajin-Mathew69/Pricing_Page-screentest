@@ -131,6 +131,10 @@ position: absolute;
 
 /* Small Devices */
 @media (min-width: 576px) {
+.p__medium {
+font-size: 13px;
+padding: 1px;
+}
 .pay__button {
 left: 27%;
 top: 22rem;
@@ -155,15 +159,15 @@ top: 2.6rem;
 /* Medium Devices */
 @media (min-width: 768px) {
 .pay__button {
-    left: 63%;
-    top: 8rem;
+left: 63%;
+top: 8rem;
 }
 .p__medium {
-font-size: 10.1px;
-padding: 1px;
+font-size: 11px;
+font-weight: bold;
 }
 .text {
-font-size: 11.6px;
+font-size: 11px;
 font-weight: bold;
 }
 .card {
@@ -182,8 +186,8 @@ width: 13rem;
 top: -1rem;
 }
 .plan__text {
-    font-size: 1rem;
-    left: 2.5rem;
+font-size: 1rem;
+left: 2.5rem;
 top: 0.4rem;
 }
 }
@@ -192,28 +196,50 @@ top: 0.4rem;
 @media (min-width: 992px) {
 .section__content__right {
 width: 15rem;
+height: 3rem;
 }
 .section__content__left {
 width: 15rem;
+height: 3rem;
 }
 .pay__button {
-left: 25%;
-top: 41.4rem;
+left: 67%;
+top: 12.4rem;
 }
 .p__medium {
 font-size: 15px;
-padding: 3px;
-margin: 3px;
 }
-.p__small {
+.text {
 font-size: 16px;
-text-align: center;
 }
 }
 /* Extra Large */
 @media (min-width: 1200px) {
 .pay__button {
-left: 25%;
-top: 41.4rem;
+left: 65%;
+top: 12.4rem;
+}
+.phone__icon {
+top: 0.5rem;
+}
+.chat__icon {
+top: 0.5rem;
+left: 10rem;
+}
+}
+@media (min-width: 1400px) {
+.pay__button {
+left: 67%;
+top: 14.1rem;
+}
+.card {
+width: 20rem;
+height: 26rem;
+}
+.phone__icon {
+left: 14rem;
+}
+.chat__icon {
+left: 17rem;
 }
 }
