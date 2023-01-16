@@ -1,62 +1,219 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;1,300&display=swap');
-  /*  font-family: 'Sofia Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 /* Reset */
 * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-body{
-    background-color: #dce2e9;
+body {
+/* background-color: #e3effd8a; */
+background-color: #3271b8e7;
 }
-a{
-    text-decoration: none;
+p {
+margin: 1px;
+padding: 2px;
 }
+a {
+text-decoration: none;
+}
+ul li {
+list-style: none;
+}
+
 /* Classes */
-.position__relative{
-    position: relative;
+.position__relative {
+position: relative;
 }
-/* .container{
-    background-color: rgb(125, 216, 106);
+.text {
+color: #bdbdbd;
 }
-.row{
-    background-color: rgb(122, 86, 86);
+h2 {
+color: #2e2e2e;
 }
-.choose__plan__container
-{
-    background-color: rgb(180, 120, 221);
+.header {
+background-color: rgb(125, 216, 106);
 }
-.logo__container{
-    background-color: rgb(247, 137, 174);
+.main {
+background-color: rgb(122, 86, 86);
 }
-.phone__message__container{
-    background-color: rgb(185, 153, 153);
-} */
+.button {
+background-color: rgb(180, 120, 221);
+}
+.p__small {
+font-size: 10px;
+font-weight: 500;
+color: #868686;
+}
+.p__medium {
+font-size: 12.4px;
+font-weight: 600;
+color: #636262;
+}
+.icons {
+position: absolute;
+left: 1rem;
+top: 0.5rem;
+color: #868686;
+}
+.plan__text {
+position: absolute;
+left: 2.5rem;
+top: 0.5rem;
+}
+.logo__text {
+color: #0eb19e;
+}
+.phone__message__container {
+display: flex;
+justify-content: space-evenly;
+}
+.phone__icon {
+position: absolute;
+top: 0.5rem;
+}
+.chat__icon {
+position: absolute;
+top: 0.5rem;
+left: 7rem;
+}
 
-.icons{
-    position:absolute;
-    left: 1rem;
-    top:.5rem;
-    color: #868686;
-    
+.left__section__container__title {
+font-family: "Anton", sans-serif;
+font-size: 4rem;
+letter-spacing: 3px;
+line-height: 4.5rem;
 }
-.plan__text{
-    position: absolute;
+.section__content__left {
+width: 12rem;
+height: 2.5rem;
+border-radius: 1px;
+background-color: rgb(255, 255, 255);
+}
+.section__content__right {
+width: 12rem;
+height: 2.5rem;
+border-radius: 1px;
+background-color: rgb(255, 255, 255);
+}
+
+.pay__button {
+width: 15rem;
+position: absolute;
+left: 30%;
+top: 26rem;
+border-radius: 25px;
+}
+.card {
+width: 20rem;
+height: 23rem;
+box-shadow: 2px 1px 4px 5px #e4e4e4;
+background-color: rgb(255, 253, 253);
+}
+.card-title {
+color: blue;
+font-weight: bold;
+font-size: 20px;
+font-family: "Anton", sans-serif;
+letter-spacing: 1px;
+}
+.button__row {
+position: relative;
+}
+.button__container {
+position: absolute;
+/* top:2.6rem; */
+}
+/* Media Query */
+
+/* Small Devices */
+@media (min-width: 576px) {
+.pay__button {
+left: 27%;
+top: 22rem;
+}
+.chat__icon {
+left: 6rem;
+}
+.card {
+width: 20rem;
+height: 23rem;
+}
+.section__content__left,
+.section__content__right {
+width: 12rem;
+height: 2.5rem;
+}
+.button__container {
+top: 2.6rem;
+}
+}
+
+/* Medium Devices */
+@media (min-width: 768px) {
+.pay__button {
+    left: 63%;
+    top: 8rem;
+}
+.p__medium {
+font-size: 10.1px;
+padding: 1px;
+}
+.text {
+font-size: 11.6px;
+font-weight: bold;
+}
+.card {
+width: 16rem;
+height: 24rem;
+}
+.card-title {
+font-size: 30px;
+text-align: center;
+}
+.section__content__left,
+.section__content__right {
+width: 13rem;
+}
+.button__container {
+top: -1rem;
+}
+.plan__text {
+    font-size: 1rem;
     left: 2.5rem;
-    top:.5rem;
-    color:#fff;
+top: 0.4rem;
 }
-.logo__text{
-    color: #0ca392;
 }
-.phone__icon{
-    position:absolute;
-    right: 4rem;
+
+/* Large Devices */
+@media (min-width: 992px) {
+.section__content__right {
+width: 15rem;
 }
-.chat__icon{
-    position: absolute;
-    right:0.5rem;
+.section__content__left {
+width: 15rem;
+}
+.pay__button {
+left: 25%;
+top: 41.4rem;
+}
+.p__medium {
+font-size: 15px;
+padding: 3px;
+margin: 3px;
+}
+.p__small {
+font-size: 16px;
+text-align: center;
+}
+}
+/* Extra Large */
+@media (min-width: 1200px) {
+.pay__button {
+left: 25%;
+top: 41.4rem;
+}
 }
